@@ -1,0 +1,81 @@
+// Color Variables
+$malachite: #04e762;
+$sunset-orange: #fe4a49;
+$white: #fff;
+$river-bed: #4c5b5c;
+$westar: #dad7cd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+body {
+  background-color: $river-bed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quiz {
+  width: 80%;
+  margin: 3.125rem auto;
+
+  &__title {
+    text-align: center;
+    color: $white;
+  }
+
+  &__item {
+    background-color: $westar;
+    border-radius: 5px;
+    margin-top: 1.25rem;
+    padding: 1rem;
+  }
+
+  &__question {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  &__choice {
+    margin: 0.1875rem 0.1875rem 0 0.3125rem;
+  }
+
+  &__output {
+    @extend .quiz__item;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    display: none;
+
+    &--success,
+    &--error {
+      display: block;
+      color: $white;
+    }
+
+    &--success {
+      background-color: $malachite;
+    }
+
+    &--error {
+      background-color: $sunset-orange;
+    }
+  }
+
+  &__button-grp {
+    text-align: center;
+  }
+
+  &__submit {
+    cursor: pointer;
+    margin-top: 1.25rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  &__reset {
+    @extend .quiz__submit;
+  }
+}

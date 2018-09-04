@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <main class="quiz">
+        <h1 class="quiz__title">Simple Mathematics Quiz</h1>
+        <section class="quiz__item">
+            <h2 class="quiz__question">1.) MCMXCIV is equivalent to what number?</h2>
+            <input type="radio" name="q1" class="quiz__choice" value="false">a.) 1964
+            <br>
+            <input type="radio" name="q1" class="quiz__choice" value="true">b.) 1994
+            <br>
+            <input type="radio" name="q1" class="quiz__choice" value="false">c.) 1984
+            <br>
+            <input type="radio" name="q1" class="quiz__choice" value="false">d.) 1974
+        </section>
+
+        <section class="quiz__item">
+            <h2 class="quiz__question">2.) An angular unit equivalent to 1 / 400 of the circumference of a circle is called</h2>
+            <input type="radio" name="q2" class="quiz__choice" value="false">a.) mil
+            <br>
+            <input type="radio" name="q2" class="quiz__choice" value="false">b.) degree
+            <br>
+            <input type="radio" name="q2" class="quiz__choice" value="false">c.) radian
+            <br>
+            <input type="radio" name="q2" class="quiz__choice" value="true">d.) grad
+        </section>
+
+        <section class="quiz__item">
+            <h2 class="quiz__question">3.) What is the absolute temperature of the freezing point of water in degree Rankine?</h2>
+            <input type="radio" name="q3" class="quiz__choice" value="true">a.) 492
+            <br>
+            <input type="radio" name="q3" class="quiz__choice" value="false">b.) 0
+            <br>
+            <input type="radio" name="q3" class="quiz__choice" value="false">c.) 460
+            <br>
+            <input type="radio" name="q3" class="quiz__choice" value="false">d.) 273
+        </section>
+
+        <section class="quiz__item">
+            <h2 class="quiz__question">4.) 10 to the 12
+                <sup>th</sup> power is the value of the prefix ____</h2>
+            <input type="radio" name="q4" class="quiz__choice" value="false">a.) micro
+            <br>
+            <input type="radio" name="q4" class="quiz__choice" value="false">b.) femto
+            <br>
+            <input type="radio" name="q4" class="quiz__choice" value="true">c.) tera
+            <br>
+            <input type="radio" name="q4" class="quiz__choice" value="false">d.) atto
+        </section>
+
+        <section class="quiz__item">
+            <h2 class="quiz__question">5.) One horsepower is equivalent to</h2>
+            <input type="radio" name="q5" class="quiz__choice" value="true">a.) 746 Watts
+            <br>
+            <input type="radio" name="q5" class="quiz__choice" value="false">b.) 7460 Watts
+            <br>
+            <input type="radio" name="q5" class="quiz__choice" value="false">c.) 74.6 Watts
+            <br>
+            <input type="radio" name="q5" class="quiz__choice" value="false">d.) 7.46 Watts
+        </section>
+
+        <section class="quiz__output">
+            <p class="quiz__result"></p>
+        </section>
+
+        <section class="quiz__button-grp">
+            <button class="quiz__submit">Submit Answers</button>
+            <button class="quiz__reset">Reset</button>
+        </section>
+    </main>
+
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
